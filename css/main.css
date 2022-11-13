@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("construction_trends_bimcommunity\ 1.png");
+  background-size: cover;
+  overflow-x: hidden;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fabb22;
+  height: 13vh;
+  width: 90%;
+  margin-left: 200px;
+}
+.logo {
+  width:100%;
+  height: 100%;
+  margin-left: 100px;
+  background-color: rgb(161, 161, 161);
+}
+.logo-container {
+  margin-left: -400px;
+  height: 13vh;
+  width: 40%;
+  background-color: white;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #28334a;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.nav-links a:hover {
+  color: white;
+}
+.nav-links li {
+  list-style: none;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.txt {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  line-height: 65px;
+  margin: 70px 120px;
+}
+.txt2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-left: 120px;
+  margin-bottom: 40px;
+}
+.intro {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-text {
+  color: #fabb22;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.slider {
+  background-color: #fabb22;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+.hide{
+  background-color: black;
+  overflow: hidden;
+}
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+    background-size: cover;
+    background: url("construction_trends_bimcommunity\ 1.png");
+    background-repeat: no-repeat;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #fabb22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 56.6%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    margin-right: -10px;
+    /* border: 1px solid black; */
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .logo-container {
+    display: block;
+    margin-left: -370px;
+    width: 50%;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .hamburger {
+    display: block;
+    margin-left: -50px;
+  }
+  .txt2 {
+    width: 40%;
+    margin-left: 10px;
+    margin-top: -40px;
+  }
+  .txt {
+    margin-left: 10px;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
